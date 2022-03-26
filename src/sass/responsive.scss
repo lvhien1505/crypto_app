@@ -1,0 +1,31 @@
+$XXS:575px;
+$XS:576px;
+$SM: 768px;
+$XL: 1200px;
+$XXL:1600px;
+
+// media queries
+
+@mixin Responsive($canvas) {
+    @if $canvas == XXS {
+        @media only screen and (max-width: $XXS) {
+            @content;
+        }
+    } @else if $canvas == XS {
+        @media only screen and (min-width: $XS) {
+            @content;
+        }
+    } @else if $canvas == SM {
+        @media only screen and (min-width: $SM) {
+            @content;
+        }
+    } @else if $canvas == XL {
+        @media only screen and (min-width: $XL) {
+            @content;
+        }
+    } @else if $canvas == XXL {
+        @media only screen and (min-width: $XXL) {
+            @content;
+        }
+    }
+}

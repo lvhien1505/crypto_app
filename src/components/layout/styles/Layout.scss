@@ -1,0 +1,56 @@
+@import 'sass/responsive.scss';
+@import 'sass/colors.scss';
+
+.app {
+    .header{
+        @include Responsive(XXS) {
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+        @include Responsive(XS) {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+        @include Responsive(SM) {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+        @include Responsive(XL) {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+        @include Responsive(XXL) {
+            margin-left: 24px;
+            margin-right: 24px;
+        }
+    }
+    .navmenu-container,.main {
+        @include Responsive(XXS) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        @include Responsive(XS) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        @include Responsive(SM) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        @include Responsive(XL) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        @include Responsive(XXL) {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+    .main{
+        background-color: rgba($color: $color-primary--light, $alpha: 0.35);
+    }
+    .footer{
+        background-color: $color-primary--dark;
+        padding: 16px;
+    }
+}

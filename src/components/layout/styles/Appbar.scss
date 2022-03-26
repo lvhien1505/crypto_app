@@ -1,0 +1,39 @@
+@import 'sass/colors';
+
+.appbar {
+    .appbar-container {
+        .header {
+            height: 64px;
+            display: flex;
+            align-items: center;
+
+            .logo {
+                margin: 0;
+
+                .logo-left {
+                    color: $color-primary;
+                }
+
+                .logo-right {
+                    color: $color-secondary;
+                }
+            }
+
+        }
+        .navmenu-container {
+            background-color: $color-primary--dark;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .navmenu-item {
+                margin: 0;
+                a {
+                    color: #fff;
+                    opacity: 93%;
+                }
+            }
+
+        }
+    }
+}
